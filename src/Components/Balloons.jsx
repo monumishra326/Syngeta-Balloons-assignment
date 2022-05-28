@@ -69,7 +69,7 @@ export const Balloons = () => {
   `;
 /////////////////////shot handler////////
   const textHandler = () => {
-    console.log(input);
+    
 
     if (input == 1) {
       setCircle1("none");
@@ -92,7 +92,7 @@ export const Balloons = () => {
   /////////////same position back////////
 
   const backhandler = (value) => {
-    console.log("hello");
+    
     if (value == 1) {
       setCircle8("none");
       setCircle1("block");

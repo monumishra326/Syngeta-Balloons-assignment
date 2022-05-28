@@ -53,10 +53,11 @@
       border: 2px solid rebeccapurple;
       color: white;
       background-color: rgb(203, 133, 28);
+      cursor: progress;
 
 
   }
-  button::hover{
-      background-color: aqua;
+  button:hover{
+      color: black;
+      background-color: brown;
   }
-  
