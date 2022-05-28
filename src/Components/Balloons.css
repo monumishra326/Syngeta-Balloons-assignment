@@ -1,13 +1,13 @@
 .inputbox {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 30px;
   }
   
   .box {
     width: 350px;
     height: 350px;
-    border: 2px solid black;
+    border: 4px solid black;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -38,11 +38,17 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 20px;
   }
   
-  .inputdiv {
-    background-color: black;
+  .inputbox {
+      width: 100%;
+      height: 50px;
+    background-color: palevioletred;
     color: white;
+  }
+  input{
+      padding: 13px 30px;
+      margin: 10px;
   }
   
