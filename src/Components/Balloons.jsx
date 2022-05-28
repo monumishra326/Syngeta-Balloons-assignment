@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-// import "./balloons.css";
+import "./Balloons.css";
 import styled from "styled-components";
 export const Balloons = () => {
   const [input, setInput] = useState(0);
@@ -117,18 +117,18 @@ export const Balloons = () => {
 
     <div className="maincontainer">
       <div className="box">
-        <Circlediv8 onClick={() => backhandler(1)}>1</Circlediv8>
-        <Circlediv9 onClick={() => backhandler(2)}>2</Circlediv9>
-        <Circlediv10 onClick={() => backhandler(3)}>3</Circlediv10>
-        <Circlediv11 onClick={() => backhandler(4)}>4</Circlediv11>
-        <Circlediv12 onClick={() => backhandler(5)}>5</Circlediv12>
+        <Circlediv8 onClick={() => backhandler(1)}></Circlediv8>
+        <Circlediv9 onClick={() => backhandler(2)}></Circlediv9>
+        <Circlediv10 onClick={() => backhandler(3)}></Circlediv10>
+        <Circlediv11 onClick={() => backhandler(4)}></Circlediv11>
+        <Circlediv12 onClick={() => backhandler(5)}></Circlediv12>
       </div>
       <div className="circlediv">
-        <Circlediv1>1</Circlediv1>
-        <Circlediv2>2</Circlediv2>
-        <Circlediv3>3</Circlediv3>
-        <Circlediv4>4</Circlediv4>
-        <Circlediv5>5</Circlediv5>
+        <Circlediv1></Circlediv1>
+        <Circlediv2></Circlediv2>
+        <Circlediv3></Circlediv3>
+        <Circlediv4></Circlediv4>
+        <Circlediv5></Circlediv5>
       </div>
     </div>
   </div>
