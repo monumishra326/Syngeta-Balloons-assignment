@@ -67,7 +67,7 @@ export const Balloons = () => {
     border: 3px solid #c9bccd;
     display: ${circle12};
   `;
-
+/////////////////////shot handler////////
   const textHandler = () => {
     console.log(input);
 
@@ -88,6 +88,8 @@ export const Balloons = () => {
       setCircle12("block");
     }
   };
+
+  /////////////same position back////////
 
   const backhandler = (value) => {
     console.log("hello");
