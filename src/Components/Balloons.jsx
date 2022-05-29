@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import "./Balloons.css";
 import styled from "styled-components";
 export const Balloons = () => {
+ let colorspoint=[0,1,2,3,4];
+ let randomgenerator=colorspoint.sort((a,b)=>0.5-Math.random());
+
+
   const [input, setInput] = useState(0);
   const [circle1, setCircle1] = useState("block");
   const [circle2, setCircle2] = useState("block");
@@ -14,57 +18,62 @@ export const Balloons = () => {
   const [circle10, setCircle10] = useState("none");
   const [circle11, setCircle11] = useState("none");
   const [circle12, setCircle12] = useState("none");
+  const [colorpoin,setColorpoin]= useState(randomgenerator);
+
+  var colorstore=["#d5e8d4","#ffe6cd","#6a00ff","#d9e8fb","#e2d5e7"];
+  var borderstore=["#c1d4bb","#c9b378","#804dc6","#b0bdcd","#c9bccd"];
+
   //////right block////////////
   const Circlediv1 = styled.div`
-    background-color: #d5e8d4;
-    border: 3px solid #c1d4bb;
+    background-color: ${colorstore[colorpoin[0]]};
+    border: 4px solid ${borderstore[colorpoin[0]]};
     display: ${circle1};
   `;
   const Circlediv2 = styled.div`
-    background-color: #ffe6cd;
-    border: 3px solid #c9b378;
+    background-color: ${colorstore[colorpoin[1]]};
+    border: 4px solid ${borderstore[colorpoin[1]]};
     display: ${circle2};
   `;
   const Circlediv3 = styled.div`
-    background-color: #6a00ff;
-    border: 2px solid #804dc6;
+    background-color: ${colorstore[colorpoin[2]]};
+    border: 4px solid  ${borderstore[colorpoin[2]]};
     display: ${circle3};
   `;
   const Circlediv4 = styled.div`
-    background-color: #d9e8fb;
-    border: 2px solid #b0bdcd;
+    background-color: ${colorstore[colorpoin[3]]};
+    border: 4px solid ${borderstore[colorpoin[3]]};
     display: ${circle4};
   `;
   const Circlediv5 = styled.div`
-    background-color: #e2d5e7;
-    border: 3px solid #c9bccd;
+    background-color: ${colorstore[colorpoin[4]]};
+    border: 4px solid ${borderstore[colorpoin[4]]};
     display: ${circle5};
   `;
 
   //left block/////////////////////////
   const Circlediv8 = styled.div`
-    background-color: #d5e8d4;
-    border: 3px solid #c1d4bb;
+    background-color: ${colorstore[colorpoin[0]]};
+    border: 4px solid ${borderstore[colorpoin[0]]};
     display: ${circle8};
   `;
   const Circlediv9 = styled.div`
-    background-color: #ffe6cd;
-    border: 3px solid #c9b378;
+    background-color: ${colorstore[colorpoin[1]]};
+    border: 4px solid ${borderstore[colorpoin[1]]};
     display: ${circle9};
   `;
   const Circlediv10 = styled.div`
-    background-color: #6a00ff;
-    border: 3px solid #804dc6;
+    background-color: ${colorstore[colorpoin[2]]};
+    border: 4px solid ${borderstore[colorpoin[2]]};
     display: ${circle10};
   `;
   const Circlediv11 = styled.div`
-    background-color: #d9e8fb;
-    border: 3px solid #b0bdcd;
+    background-color: ${colorstore[colorpoin[3]]};
+    border: 4px solid ${borderstore[colorpoin[3]]};
     display: ${circle11};
   `;
   const Circlediv12 = styled.div`
-    background-color: #e2d5e7;
-    border: 3px solid #c9bccd;
+    background-color: ${colorstore[colorpoin[4]]};
+    border: 4px solid ${borderstore[colorpoin[4]]};
     display: ${circle12};
   `;
 /////////////////////shot handler////////
